@@ -35,3 +35,9 @@ if [[ $($CALCULATOR 6 / 2) -ne 3 ]]; then  # If the output of the program is not
   echo 'ERROR! A valid run of the calculator (6 / 2) failed to produce 3 as an output!'
   exit 1
 fi
+
+# Test 05: Ensure program works with subtraction
+if [[ $($CALCULATOR 6 - 2) -ne 4 ]]; then  # If the output of the program is not 4...
+  echo 'ERROR! A valid run of the calculator (6 - 2) failed to produce 4 as an output!'
+  exit 1
+fi
