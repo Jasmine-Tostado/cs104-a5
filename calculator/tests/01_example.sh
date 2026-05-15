@@ -31,7 +31,7 @@ if $CALCULATOR 3 @ 2; then  # If the return code of $PROGRAM is zero (i.e. succe
 fi
 
 # Test 04: Ensure program works with division
-if [[ $($CALCULATOR 6 / 2) -ne 2 ]]; then  # If the output of the program is not 3...
+if [[ $($CALCULATOR 6 / 2) -ne 3 ]]; then  # If the output of the program is not 3...
   echo 'ERROR! A valid run of the calculator (6 / 2) failed to produce 3 as an output!'
   exit 1
 fi
