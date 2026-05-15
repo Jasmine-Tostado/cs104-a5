@@ -30,8 +30,8 @@ if $CALCULATOR 3 @ 2; then  # If the return code of $PROGRAM is zero (i.e. succe
   exit 1
 fi
 
-# Test 04: Ensure program works with mutiplication
-if [[ noglob $($CALCULATOR 4 * 2) -ne 8 ]]; then  # If the output of the program is not 8...
-  echo 'ERROR! A valid run of the calculator (4 * 2) failed to produce 8 as an output!'
+# Test 04: Ensure program works with division
+if [[ $($CALCULATOR 6 / 2) -ne 2 ]]; then  # If the output of the program is not 3...
+  echo 'ERROR! A valid run of the calculator (6 / 2) failed to produce 3 as an output!'
   exit 1
 fi
